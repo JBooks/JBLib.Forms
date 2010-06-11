@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Example</title>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
+        <script src="Scripts/App.Forms.js" type="text/javascript"></script>
+        <link href="Styles/Form.css" rel="stylesheet" type="text/css" />
+    </head>
+
+    <body>
+        <div id="EditForm_1" style="width:600px; border: solid 1px #888888; padding:15px 15px 15px 15px">
+            <div style="padding:0px 0px 15px 0px">This form is layout with field labels on left.</div>
+            <form action="POST">
+                <div class="editor">
+                    <div class="editor-label required">
+                        First Name:
+                    </div>
+                    <div class="editor-field">
+                        <div class="input-area">
+                            <input id="FirstName" type="Text" />
+                        </div>
+                        <div class="input-validation-area">
+                            <!-- Put your validation code here !-->
+                        </div>
+                    </div>
+                </div>
+                <div class="editor">
+                    <div class="editor-label required">
+                        Last Name:
+                    </div>
+                    <div class="editor-field">
+                        <div class="input-area">
+                            <input id="LastName" type="Text" />
+                        </div>
+                        <div class="input-validation-area">
+                            <!-- Put your validation code here !-->
+                        </div>
+                    </div>
+                </div>
+                <div class="editor">
+                    <div class="editor-label">
+                        Phone:
+                    </div>
+                    <div class="editor-field">
+                        <div class="input-area">
+                            <input id="Phone" type="Text" />
+                        </div>
+                        <div class="input-validation-area">
+                            <!-- Put your validation code here !-->
+                        </div>
+                    </div>
+                </div>
+                <div class="form-action-area">
+                    <input type="submit" value="Create" title="Example form only, do not press." />
+                </div>
+
+            </form>
+        </div>
+
+        <br />
+        <br />
+        <br />
+
+        <div id="EditForm_2"  style="width:600px; border: solid 1px #888888; padding:15px 15px 15px 15px">
+            <div style="padding:0px 0px 15px 0px">This form is layout with field labels on top.</div>
+            <form action="POST">
+                <div class="editor">
+                    <div class="editor-label required">
+                        First Name:
+                    </div>
+                    <div class="editor-field">
+                        <div class="input-area">
+                            <input id="FirstName" type="Text" />
+                        </div>
+                        <div class="input-validation-area">
+                            <!-- Put your validation code here !-->
+                        </div>
+                    </div>
+                </div>
+                <div class="editor">
+                    <div class="editor-label required">
+                        Last Name:
+                    </div>
+                    <div class="editor-field">
+                        <div class="input-area">
+                            <input id="LastName" type="Text" />
+                        </div>
+                        <div class="input-validation-area">
+                            <!-- Put your validation code here !-->
+                        </div>
+                    </div>
+                </div>
+                <div class="editor">
+                    <div class="editor-label">
+                        Phone:
+                    </div>
+                    <div class="editor-field">
+                        <div class="input-area">
+                            <input id="Phone" type="Text" />
+                        </div>
+                        <div class="input-validation-area">
+                            <!-- Put your validation code here !-->
+                        </div>
+                    </div>
+                </div>
+                <div class="form-action-area">
+                    <input type="submit" value="Create" title="Example form only, do not press." />
+                </div>
+
+            </form>
+        </div>
+
+        <script type="text/javascript">
+
+            $().ready(function () {
+
+                $("#EditForm_1").prepareForm({ labelLocation: "left", labelAlignment: "right", errorLocation: "bottom", adjustActionArea: "usingLabelWidth" });
+                $("#EditForm_2").prepareForm({ labelLocation: "top", labelAlignment: "left", errorLocation: "bottom" });
+
+            });
+
+        </script>
+    </body>
+</html>

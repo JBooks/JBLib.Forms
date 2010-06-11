@@ -1,0 +1,96 @@
+﻿fieldset
+{
+    border:none;
+}
+
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error
+{
+    color: #ff0000;
+}
+
+.field-validation-valid
+{
+    display: none;
+}
+
+.input-validation-error
+{
+    border: 1px solid #ff0000;
+    background-color: #ffeeee;
+    padding: 2px 3px 2px 0px;   
+    font-size:80%;  
+}
+
+.validation-summary-errors
+{
+    font-weight: bold;
+    color: #ff0000;
+}
+
+.validation-summary-valid
+{
+    display: none;
+}
+
+/* Styles for editor and display helpers
+----------------------------------------------------------*/
+
+.editor
+{
+    display:block;
+}
+
+.display-label,
+.editor-label,
+.display-field,
+.editor-field
+{
+    margin: 0.5em 0;
+}
+
+.editor-label
+{
+    width: 120px;    
+}
+
+
+.required
+{
+    font-weight:bold;
+}
+
+.input-area
+{
+}
+
+
+.input-validation-area
+{
+   
+}
+
+.form-action-area
+{
+    border-top: dotted 1px #666666;
+    margin-top:15px;
+    padding-top:10px;    
+}
+
+
+.form-clear-fix       /* Dynamically inserted to html via jQuery if showing error message to the right */
+{
+    float: none;
+    clear: both;
+    content: *;
+    visibility: hidden;
+}
+
+
+.edit_form
+{
+    padding-top:2px;
+    background-color: White;    
+}
+
